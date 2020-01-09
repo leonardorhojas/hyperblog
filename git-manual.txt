@@ -1,0 +1,23 @@
+git init
+git add
+git commit -m "nombre del commit"
+git commit -am "nombre del commit"
+git log
+git show archivo.txt
+git dif hash1 hash2
+git reset hash --hard
+git checkout hash1 [  archivo.txt] (volver en el tiempo a un TAG)
+git rm --cached  (elimina el archivo de staggin y del siguiente commit, pero no del disco)
+git rm --force   ( elimia el archivo de git y del disco )
+git reset --soft (similar a checkout pero sin poder volver atras, pero permite conservar cambios de stagging)
+git reset --hard (no permite conservar cambios de stagging)
+git reset HEAD   archivos del área de Staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, 
+
+---Remote
+
+git clone url
+git push 
+git fetch 
+git merge 
+git pull (fetch + merge)
+
