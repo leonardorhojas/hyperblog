@@ -20,4 +20,13 @@ git push
 git fetch 
 git merge 
 git pull (fetch + merge)
+git checkout [branch]
 
+git merge [branch]
+--Branches
+
+git remote add origin https://github.com/leonardorhojas/hyperblog.git
+git remote -v
+
+git pull origin master (mezclar origen con master)
+git push origin master
