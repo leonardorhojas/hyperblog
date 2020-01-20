@@ -12,6 +12,8 @@ git rm --force   ( elimia el archivo de git y del disco )
 git reset --soft (similar a checkout pero sin poder volver atras, pero permite conservar cambios de stagging)
 git reset --hard (no permite conservar cambios de stagging)
 git reset HEAD   archivos del área de Staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, 
+gitk (Interfaz grafica para ver las ramas)
+
 
 ---Remote
 
@@ -24,9 +26,25 @@ git checkout [branch]
 
 git merge [branch]
 --Branches
+git branch (lista todas las ramas)
+git show-branch (lista las ramas y su historiaL)
+git show-branch --all (lista las ramas y un detalle de las mismas)
+git branch nombre-de-la-rama o git checkout -b nombre-de-la-rama. 
+git push origin nombre-de-la-rama.   (enviar los cambio)
 
 git remote add origin https://github.com/leonardorhojas/hyperblog.git
 git remote -v
 
 git pull origin master (mezclar origen con master)
 git push origin master
+
+--Tags
+
+ git tag -a nombre-del-tag id-del-commit.
+Crear un nuevo tag y asignarlo a un commit: git tag -a nombre-del-tag id-del-commit.
+Borrar un tag en el repositorio local: git tag -d nombre-del-tag.
+Listar los tags de nuestro repositorio local: git tag o git show-refs --tags.
+Publicar un tag en el repositorio remoto: git push origin --tags.
+Borrar un tag del repositorio remoto: git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag.
+John Freddy Vega
+
